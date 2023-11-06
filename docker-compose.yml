@@ -15,3 +15,8 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: mypassword
+    volumes:
+      - hello-pgdata:/var/lib/postgresql/data
+
+volumes:
+  hello-pgdata:
